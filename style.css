@@ -1,0 +1,42 @@
+*::selection{
+  color: white;
+  background-color: #6610f2;
+}
+
+.navbar{
+  background-color: #6610f2;
+}
+.navbar-toggler {
+  border: none !important;
+  box-shadow: none;
+}
+.navbar-toggler:focus {
+  box-shadow: none !important;
+}
+.navbar h5{
+  font-size: 18px;
+}
+.navbar .offcanvas1 .navbar-nav .nav-item .nav-link{
+  font-size: 14px;
+}
+.navbar .offcanvas1 .navbar-nav .nav-item .nav-link:hover{
+  color: #6610f2;
+}
+
+.navbar .offcanvas2 .navbar-nav .nav-item .nav-link{
+  color: white;
+}
+.body .navbar-nav .nav-item .nav-link:hover{
+   text-decoration: underline;
+}
+.body-btn:hover{
+  color: #6610f2 !important;
+  background-color: white !important;
+  border: 1px solid #6610f2 !important;
+}
+.bootstrap-icon{
+  transition: 0.5s;
+}
+.bootstrap-icon:hover{
+  transform: rotate(45deg);
+}

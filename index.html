@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Bootstrap 5</title>
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+  <!-- Bootstrap 5.2 css -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Fontawesome 6.2 icon -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"/>
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <nav class="navbar sticky-top">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+        <i class="fa-solid fa-bars fs-4 my-2 text-light"></i>
+      </button>
+       <a class="navbar-brand mx-auto bootstrap-icon" href="#"><i class="fa-brands fa-bootstrap text-light fs-1"></i></a>
+      <i class="fa-solid fa-magnifying-glass text-white me-1"></i>
+      <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+        <i class="fa-solid fa-ellipsis text-light"></i>
+      </button>
+      <div class="offcanvas offcanvas-start w-100 w-md-50 w-lg-50" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+        <div class="offcanvas-header border-bottom">
+          <h4 class="offcanvas-title" id="offcanvasNavbarLabel">Browse docs</h4>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body offcanvas1">
+          <div class="row">
+            <div class="col-6">
+              <div class="d-flex">
+                <i class="fa-solid fa-book-open mt-1" style="color: #6610f2;"></i>
+                <h5 class="ms-2">Getting started</h5>
+              </div>
+               <ul class="navbar-nav justify-content-end ms-4 flex-grow-1 pe-3">
+                 <li class="nav-item">
+                   <a class="nav-link" href="#">Introduction</a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link" href="#">Download</a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link" href="#">Contents</a>
+                 </li><li class="nav-item">
+                   <a class="nav-link" href="#">Browsers & devices</a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link" href="#">JavaScript</a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link" href="#">Webpack</a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link" href="#">Parcel</a>
+                 </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Vite</a>
+                  </li> <li class="nav-item">
+                     <a class="nav-link" href="#">Accessibility</a>
+                   </li> <li class="nav-item">
+                      <a class="nav-link" href="#">RFS</a>
+                    </li> <li class="nav-item">
+                       <a class="nav-link" href="#">RTL</a>
+                     </li> <li class="nav-item">
+                        <a class="nav-link" href="#">Contribute</a>
+                        </li>
+               </ul>
+                <div class="d-flex">
+                  <i class="fa-solid fa-sliders mt-1" style="color: #d63384;"></i>
+                  <h5 class="ms-2">Customize</h5>
+                  </div>
+                  <ul class="navbar-nav justify-content-end ms-4 flex-grow-1 pe-3">
+                 <li class="nav-item">
+                   <a class="nav-link" href="#">Overview
+                   </a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link" href="#">Sass</a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link" href="#">Options</a>
+                 </li><li class="nav-item">
+                   <a class="nav-link" href="#">Color</a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link" href="#">Components</a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link" href="#">CSS variables</a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link" href="#">Optimize</a>
+                 </li>
+               </ul>
+               <div class="d-flex">
+                 <i class="fa-solid fa-border-all mt-1 text-success"></i>
+                 <h5 class="ms-2">Layout</h5>
+               </div>
+                 <ul class="navbar-nav justify-content-end ms-4 flex-grow-1 pe-3">
+                 <li class="nav-item">
+                   <a class="nav-link" href="#">Breakpoints</a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link" href="#">Containers</a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link" href="#">Grid</a>
+                 </li><li class="nav-item">
+                   <a class="nav-link" href="#">Columns</a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link" href="#">Gutters</a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link" href="#">Utilities</a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link" href="#">Z-index</a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link" href="#">CSS Grid</a>
+                 </li>
+               </ul>
+                <div class="d-flex">
+                  <i class="fa-regular fa-file-image mt-1 text-secondary"></i>
+                  <h5 class="ms-2">Content</h5>
+                </div>
+                <ul class="navbar-nav justify-content-end ms-4 flex-grow-1 pe-3">
+                 <li class="nav-item">
+                   <a class="nav-link" href="#">Reboot</a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link" href="#">Typography</a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link" href="#">Images</a>
+                 </li><li class="nav-item">
+                   <a class="nav-link" href="#">Tables</a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link" href="#">Figures</a>
+                 </li>
+               </ul>
+                 <div class="d-flex">
+                   <i class="fa-solid fa-pager mt-1 text-primary"></i>
+                   <h5 class="ms-2">Forms</h5>
+                 </div>
+                 <ul class="navbar-nav justify-content-end ms-4 flex-grow-1 pe-3">
+                 <li class="nav-item">
+                   <a class="nav-link" href="#">Overview
+                   </a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link" href="#">Form control</a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link" href="#">Select</a>
+                 </li><li class="nav-item">
+                   <a class="nav-link" href="#">Checks & radios</a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link" href="#">Range</a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link" href="#">Input group</a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link" href="#">Floating labels</a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link" href="#">Layout</a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link" href="#">Validation</a>
+                 </li>
+               </ul>
+            </div>
+             <div class="col-6">
+               <div class="d-flex">
+                <i class="fa-solid fa-server mt-1 text-info"></i>
+               <h5 class="ms-2">Components</h5>
+               </div>
+               <ul class="navbar-nav justify-content-end ms-4 flex-grow-1 pe-3">
+                 <li class="nav-item">
+                   <a class="nav-link" href="#">Accordion</a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link" href="#">Alerts</a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link" href="#">Badge</a>
+                 </li><li class="nav-item">
+                   <a class="nav-link" href="#">Breadcrumb</a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link" href="#">Buttons</a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link" href="#">Button group</a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link" href="#">Card</a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link" href="#">Carousel</a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link" href="#">Close button</a>
+                 </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Collapse</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Dropdowns</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">List group</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Navbar</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Navs & tabs</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Offcanvas</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"> Placeholders</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Popovers</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Progress</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Scrollspy</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Pagination</a>
+                    </li><li class="nav-item">
+                      <a class="nav-link" href="#">Spinners</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Toasts</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Tooltips</a>
+                    </li>
+               </ul>
+                    <div class="d-flex">
+                      <i class="fa-solid fa-wand-magic-sparkles mt-1" style="color: orange;"></i>
+                      <h5 class="ms-2">Helpers</h5>
+                      </div>
+                     <ul class="navbar-nav justify-content-end ms-4 flex-grow-1 pe-3">
+                     <li class="nav-item">
+                    <a class="nav-link" href="#">Clearfix
+                     </a>
+                    </li>
+                   <li class="nav-item">
+                     <a class="nav-link" href="#">Color & background</a>
+                  </li>
+                  <li class="nav-item">
+                   <a class="nav-link" href="#">Colored links</a>
+                 </li><li class="nav-item">
+                   <a class="nav-link" href="#">Position</a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link" href="#">Ratio</a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link" href="#">Stacks</a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link" href="#">Stretched link</a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link" href="#">Text truncation</a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link" href="#">Vertical rule</a>
+                 </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Visually hidden</a>
+                    </li>
+               </ul>
+               <div class="d-flex">
+               <i class="fa-solid fa-star mt-1 text-danger"></i>
+               <h5 class="ms-2">Utilities</h5>
+               </div>
+               <ul class="navbar-nav justify-content-end ms-4 flex-grow-1 pe-3">
+                 <li class="nav-item">
+                   <a class="nav-link" href="#">API</a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link" href="#">Background</a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link" href="#">Borders</a>
+                 </li><li class="nav-item">
+                   <a class="nav-link" href="#">Colors</a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link" href="#">Display</a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link" href="#">Flex</a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link" href="#">Float</a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link" href="#">Interactions</a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link" href="#">Opacity</a>
+                 </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Overflow</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Position</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Shadows</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Sizing</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Spacing</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Text</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Vertical align</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Visibility</a>
+                    </li>
+               </ul>
+               <div class="d-flex">
+              <i class="fa-solid fa-screwdriver-wrench text-primary mt-1"></i>
+               <h5 class="ms-2">Extend</h5>
+               </div>
+               <ul class="navbar-nav justify-content-end ms-4 flex-grow-1 pe-3">
+                 <li class="nav-item">
+                   <a class="nav-link" href="#">Approach</a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link" href="#">Icons</a>
+                 </li>
+               </ul>
+               <div class="d-flex">
+                 <i class="fa-solid fa-globe mt-1" style="color: #6610f2;"></i>
+                 <h5 class="ms-2">About</h5>
+               </div>
+               <ul class="navbar-nav justify-content-end ms-4 flex-grow-1 pe-3">
+                 <li class="nav-item">
+                   <a class="nav-link" href="#">Overview</a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link" href="#">Team</a>
+                 </li>
+                   <li class="nav-item">
+                     <a class="nav-link" href="#">Brand</a>
+                   </li>
+                   <li class="nav-item">
+                     <a class="nav-link" href="#">License
+                     </a>
+                   </li>
+                     <li class="nav-item">
+                       <a class="nav-link" href="#">Translations</a>
+                     </li>
+               </ul>
+               </div>
+             </div>
+             <hr class="mx-auto" style="width: 90%">
+               <ul class="navbar-nav justify-content-end mt-2 ps-4 flex-grow-1 pe-3">
+             <li class="nav-item">
+               <a class="nav-link active" aria-current="page" href="#">Migration</a>
+             </li>
+               </ul>
+          </div>
+        </div>
+
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel"style="background-color:#6610f2;">
+              <div class="offcanvas-header">
+                <h4 class="offcanvas-title text-white" id="offcanvasDarkNavbarLabel">Bootstrap</h4>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+              </div>
+                <hr class="bg-white mx-auto" style="width: 95%;color: white;"/>
+              <div class="offcanvas-body offcanvas2">
+                <div class="row">
+                  <div class="col-6">
+                     <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                       <li class="nav-item">
+                         <a class="nav-link" href="#">Docs</a>
+                       </li>
+                       <li class="nav-item">
+                         <a class="nav-link" href="#">Icons</a>
+                       </li>
+                       <li class="nav-item">
+                         <a class="nav-link" href="#">Blog</a>
+                       </li>
+                     </ul>
+                  </div>
+                  <div class="col-6">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Examples</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#">Themes</a>
+                  </li>
+                  </ul>
+                  </div>
+                </div>
+                <hr class="bg-white mx-auto" style="width: 98%;color: white;"/>
+                <div class="row">
+                  <div class="col-6">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                      <li class="nav-item">
+                        <a class="nav-link" href="#"><i class="fa-brands fa-github me-1"></i>GitHub</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">
+                          <i class="fa-regular fa-circle me-1"></i>Open Collective</a>
+                      </li>
+                    </ul>
+                  </div>
+                   <div class="col-6">
+                  <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                    <li class="nav-item">
+                      <a class="nav-link" href="#"><i class="fa-brands fa-twitter me-1"></i>Twitter</a>
+                    </li>
+                  </ul>
+                   </div>
+                </div>
+                <hr class="bg-white mx-auto" style="width: 100%;color: white;"/>
+                <div class="dropdown">
+                  <h4 class="dropdown-toggle mt-5 text-white" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Bootstrap V5.2
+                  </h4>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item disabled" href="#">v5 releases</a></li>
+                    <li><a class="dropdown-item fw-bold" href="#">Latest (5.2.x) <i class="fa-solid fa-check ms-3"></i></a></li>
+                    <li><a class="dropdown-item" href="#">v5.0.2</a></li>
+                    <li><a class="dropdown-item" href="#">v5.1.3</a></li>
+                     <li><hr class="dropdown-divider"></li>
+                     <li><a class="dropdown-item disabled" href="#">Previous releases</a></li>
+                     <li><a class="dropdown-item" href="#">v4.6.x</a></li>
+                     <li><a class="dropdown-item" href="#">v3.4.1</a></li>
+                     <li><a class="dropdown-item" href="#">v2.3.2</a></li>
+                      <li><hr class="dropdown-divider"></li>
+                     <li><a class="dropdown-item" href="#">All versions</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+  </nav>
+  
+<div class="container-fluid body">
+  <div class="row mt-5">
+    <div class="col-8">
+      <h1 class="ms-2">Get started with Bootstrap</h1>
+    </div>
+    <div class="col-4">
+      <a class="body-btn btn btn-outline-dark btn-sm ms-0 ms-md-5 ms-lg-5" href="#">View on GitHub</a>
+    </div>
+  </div>
+  <h3 class="ms-2 fw-light">Bootstrap is a powerful, feature-packed frontend toolkit. Build anything—from prototype to production—in minutes.</h3>
+  <h6 class="text-secondary ms-2 mt-4">On this page</h6>
+  <hr class="mx-auto" style="width: 97%;">
+  <ul class="navbar-nav ms-2">
+    <li class="nav-item"><a class="nav-link" href="">Quick start</a></li>
+    <li class="nav-item"><a class="nav-link" href="">CDN links</a></li>
+    <li class="nav-item"><a class="nav-link" href="">Next steps</a></li>
+    <li class="nav-item"><a class="nav-link" href="">JS components</a></li>
+    <li class="nav-item"><a class="nav-link" href="">Important globals</a></li>
+  </ul>
+   <ul class="navbar-nav ms-4">
+     <li class="nav-item"><a class="nav-link" href="">HTML5 doctype</a></li>
+     <li class="nav-item"><a class="nav-link" href="">Responsive meta tag</a></li>
+     <li class="nav-item"><a class="nav-link" href="">Box-sizing</a></li>
+     <li class="nav-item"><a class="nav-link" href="">Reboot</a></li>
+   </ul>
+   
+    <ul class="navbar-nav ms-2">
+      <li class="nav-item"><a class="nav-link" href="">Community</a></li>
+    </ul>
+    <h3 class="ms-2  mt-2">Quick start</h3>
+    <h5 class="ms-2 fw-light">Get started by including Bootstrap’s production-ready CSS and JavaScript via CDN without the need for any build steps. See it in practice with this <a class="" href="#">Bootstrap CodePen demo.</a></h5>
+    <ol type="1" class="mt-5 pb-4">
+      <li><span class="fw-bold">Create a new <span style="color: #d63384;">index.html</span> file in your project root.</span> Include the <span style="color: #d63384;">&lt;meta name="viewport"&gt;</span> tag as well for <a class="" href="#">proper responsive behavior</a> in mobile devices.</li>
+    </ol>
+    <div class="container bg-light mb-5">
+      <div class="row pt-4 ms-3">
+        <div class="col-10 text-danger">
+          &lt;!doctype html&gt;
+        </div>
+         <div class="col-2">
+        <i class="fa-regular fa-clipboard ms-0 ms-md-5 ms-lg-5"></i>
+         </div>
+      </div>
+      <div class="ms-4">
+         &lt;<span class="text-danger">html</span> lang="en"&gt;
+         <div class="ms-4">
+           &lt;<span class="text-danger">head</span>&gt;
+         </div>
+          <div class="ms-5">
+            &lt;<span class="text-danger">meta</span> charset="utf-8"&gt;<br>
+            &lt;<span class="text-danger">meta</span> charset="utf-8"&gt;<br>
+            &lt;<span class="text-danger">meta</span> name="viewport" content="width=device-width, initial-scale=1"&gt;<br>
+            &lt;<span class="text-danger">meta</span> charset="utf-8"&gt;<br>
+            &lt;<span class="text-danger">title</span>&gt;Bootstrap demo title&lt;<span class="text-danger">title</span>&gt;
+          </div>
+         <div class="ms-4">
+           &lt;<span class="text-danger">/head</span>&gt;
+         </div>
+         <div class="ms-4">
+           &lt;<span class="text-danger">body</span>&gt;
+         </div>
+         <div class="ms-5">
+           &lt;<span class="text-danger">h1</span>&gt;Hello, world!&lt;<span class="text-danger">/h1</span>&gt;
+         </div>
+         <div class="ms-4">
+           &lt;<span class="text-danger">/body</span>&gt;
+         </div>
+         <div class="ms-3 pb-4">
+            &lt;<span class="text-danger">/html</span>&gt;
+         </div>
+      </div>
+    </div>
+</div>
+<div class="container-fluid bg-light">
+  <h3 class="pt-5"><a class="navbar-brand" href="#"><i class="fa-brands fa-bootstrap"></i><span class="ms-2">Bootstrap</span></a></h3>
+ <div class="ms-2">
+    <p>Designed and built with all the love in the world by the Bootstrap team with the help of our contributors.</p>
+    <p>Code licensed MIT, docs CC BY 3.0.</p>
+    <p>Currently v5.2.2.</p>
+ </div>
+  <div class="row ms-2">
+    <div class="col-6">
+      <h5 class="mt-4">Links</h5>
+       <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href="">Docs</a></li>
+          <li class="nav-item"><a class="nav-link" href="">Examples</a></li>
+          <li class="nav-item"><a class="nav-link" href="">Icons</a></li>
+          <li class="nav-item"><a class="nav-link" href="">Themes</a></li>
+          <li class="nav-item"><a class="nav-link" href="">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="">Swag Store</a></li>
+       </ul> 
+    </div>
+       <div class="col-6">
+          <h5 class="mt-4">Guides</h5>
+          <ul class="navbar-nav">
+            <li class="nav-item"><a class="nav-link" href="">Getting started</a></li>
+            <li class="nav-item"><a class="nav-link" href="">Starter template</a></li>
+            <li class="nav-item"><a class="nav-link" href="">Webpack</a></li>
+            <li class="nav-item"><a class="nav-link" href="">Parcel</a></li>
+            <li class="nav-item"><a class="nav-link" href="">Vite</a></li>
+          </ul>
+       </div>
+  </div>
+  
+   <div class="row ms-2 mt-2 pb-5">
+     <div class="col-6">
+        <h5 class="mt-4">Projects</h5>
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class="nav-link" href=""> Bootstrap 5</a></li>
+          <li class="nav-item"><a class="nav-link" href="">Bootstrap 4</a></li>
+          <li class="nav-item"><a class="nav-link" href="">RFS</a></li>
+          <li class="nav-item"><a class="nav-link" href="">npm starter</a></li>
+        </ul>
+     </div>
+     <div class="col-6">
+       <h5 class="mt-4">Community</h5>
+       <ul class="navbar-nav">
+         <li class="nav-item"><a class="nav-link" href="">Issues</a></li>
+         <li class="nav-item"><a class="nav-link" href="">Discussions</a></li>
+         <li class="nav-item"><a class="nav-link" href="">Corporate sponsors</a></li>
+         <li class="nav-item"><a class="nav-link" href="">Open Collective</a></li>
+         <li class="nav-item"><a class="nav-link" href="">Stack Overflow</a></li>
+       </ul>
+     </div>
+   </div>
+  
+  
+  
+  
+  
+</div>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="main.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+</body>
+</html>
